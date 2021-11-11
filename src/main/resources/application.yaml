@@ -1,0 +1,10 @@
+"%dev":
+  quarkus:
+    datasource:
+      db-kind: postgresql
+      jdbc: false
+      username: ${DB_USER}
+      password: ${DB_PASSWORD}
+      reactive:
+        url: "postgresql://localhost:5432/todo_dev"
+        max-size: 20

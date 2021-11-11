@@ -16,17 +16,18 @@ val quarkusPlatformVersion: String by project
 dependencies {
     implementation(enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}"))
 
-    implementation("io.quarkus:quarkus-resteasy-reactive-jackson")
-    implementation("io.quarkus:quarkus-hibernate-reactive-panache")
-    implementation("io.quarkus:quarkus-hibernate-orm-panache-kotlin")
-    implementation("io.quarkus:quarkus-resteasy-reactive")
-    implementation("io.quarkus:quarkus-kotlin")
-    implementation("io.quarkus:quarkus-reactive-pg-client")
+    implementation("io.quarkus:quarkus-resteasy-reactive-jackson:2.4.1.Final")
+    implementation("io.quarkus:quarkus-hibernate-reactive-panache:2.4.1.Final")
+    implementation("io.quarkus:quarkus-hibernate-orm-panache-kotlin:2.4.1.Final")
+    implementation("io.quarkus:quarkus-resteasy-reactive:2.4.1.Final")
+    implementation("io.quarkus:quarkus-kotlin:2.4.1.Final")
+    implementation("io.quarkus:quarkus-reactive-pg-client:2.4.1.Final")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("io.quarkus:quarkus-arc")
+    implementation("io.quarkus:quarkus-arc:2.4.1.Final")
+    implementation("io.quarkus:quarkus-config-yaml:2.4.1.Final")
 
-    testImplementation("io.quarkus:quarkus-junit5")
-    testImplementation("io.rest-assured:rest-assured")
+    testImplementation("io.quarkus:quarkus-junit5:2.4.1.Final")
+    testImplementation("io.rest-assured:rest-assured:4.4.0")
 }
 
 group = "de.rockyj"

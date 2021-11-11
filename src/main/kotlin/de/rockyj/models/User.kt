@@ -1,6 +1,7 @@
 package de.rockyj.models
 
 import io.quarkus.hibernate.reactive.panache.PanacheEntityBase
+
 import javax.enterprise.context.ApplicationScoped
 import javax.persistence.Entity
 import javax.persistence.Id

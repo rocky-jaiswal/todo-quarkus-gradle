@@ -6,7 +6,7 @@
       username: ${DB_USER}
       password: ${DB_PASSWORD}
       reactive:
-        url: "postgresql://localhost:5432/todo_dev"
+        url: ${DB_URL}
         max-size: 20
 
 "%test":

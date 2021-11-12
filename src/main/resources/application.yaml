@@ -1,5 +1,8 @@
 "%dev":
   quarkus:
+    log:
+      console:
+        format: "%d{HH:mm:ss} %-5p [%c{2.}] (%t) %s%e%n"
     datasource:
       db-kind: postgresql
       jdbc: false
